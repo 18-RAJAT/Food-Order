@@ -27,16 +27,14 @@ const DUMMY_MEALS = [
   },
 ];
 
-const AvaliableMeals = () => {
-    const mealList=DUMMY_MEALS.map(meal=><li>{meal.name}</li>);
-    //jsx
-    return(
-        <secton className={classes.meals}>
-            <ul>
-                {mealList}
-            </ul>
-        </secton>
-    )
+const AvailableMeals = () => {
+  const mealsList = DUMMY_MEALS.map((meal) => <li>{meal.name}</li>);
+
+  return (
+    <section className={classes.meals}>
+      <ul>{mealsList}</ul>
+    </section>
+  );
 };
 
-export default AvaliableMeals; 
+export default AvailableMeals;
