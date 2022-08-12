@@ -10,6 +10,10 @@
     align-items: center;
     border-radius: 25px;
     font-weight: bold;
+    position: absolute;
+    top:50%;
+    right: 20%;
+    transform: translateY(-50%);
   }
   
   .button:hover,
