@@ -1,4 +1,6 @@
 import classes from './Model.module.css';
+import ReactDOM from 'react-dom';
+
 import { Fragment } from 'react';
 const Backdrop = props =>{
     return(
@@ -15,11 +17,15 @@ const ModelOverlay = props =>{
 };
 
 
+const portalElement = document.getElementById('overlays');    
+
 const Model = props =>{
     retun(
         <Fragment>
-            <Backdrop/>
-            <ModelOverlay>{props.children}</ModelOverlay>
+            {/* <Backdrop/>
+            <ModelOverlay>{props.children}</ModelOverlay> */}
+            {ReactDom.createPortal(<Backdrop/>,portalElement)}
+            {ReactDOM.createPortal(<ModelOverlay>{props.children}</ModelOverlay>,portalElement)}
         </Fragment>
     );
 };
