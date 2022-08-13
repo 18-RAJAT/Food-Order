@@ -5,27 +5,27 @@ import MealItem from './MealIteam/MealItem';
 const DUMMY_MEALS = [
   {
     id: 'm1',
-    name: 'Sushi',
-    description: 'Finest fish and veggies',
-    price: 22.99,
+    name: 'Taco Bell Nacho Fries',
+    description: ' Best-selling new product launch.',
+    price: 149.50,
   },
   {
     id: 'm2',
-    name: 'Schnitzel',
-    description: 'A german specialty!',
-    price: 16.5,
+    name: 'Potbelly A Wreck Sandwich',
+    description: 'Potbelly signature sandwich, A Wreck, is also its most popular one.',
+    price: 189.75,
   },
   {
     id: 'm3',
-    name: 'Barbecue Burger',
-    description: 'American, raw, meaty',
-    price: 12.99,
+    name: 'Tim Hortons Double Double',
+    description: 'Tim Horton fills a similar space to Dunkin, serving coffee, baked goods, and a range of sandwiches and snacks.',
+    price: 120.00,
   },
   {
     id: 'm4',
-    name: 'Green Bowl',
-    description: 'Healthy...and green...',
-    price: 18.99,
+    name: 'Burger King Whopper Sandwich',
+    description: 'More than 11 million customers walk through Burger King doors each day, many of them in pursuit of the famous burger.',
+    price: 99.25,
   },
 ];
 
