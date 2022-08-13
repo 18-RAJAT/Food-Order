@@ -4,7 +4,7 @@ import Modal from '../UI/Model';
 const Cart = (props) => {
     const cartItems = (
       <ul className={classes['cart-items']}>
-        {[{ id: 'c1', name: 'Pizza', amount: 2, price: 12.99 }].map((item) => (
+        {[{ id: 'c1', name: 'Pizza', amount: 2, price: 120.40 }].map((item) => (
           <li>{item.name}</li>
         ))}
       </ul>
@@ -14,7 +14,7 @@ const Cart = (props) => {
           {cartItems}
           <div className={classes.total}>
             <span>Total Amount</span>
-            <span>35.62</span>
+            <span>₹ 250.80</span>
           </div>
           <div className={classes.actions}>
             <button className={classes['button--alt']} onClick={props.onClose}>Close</button>
