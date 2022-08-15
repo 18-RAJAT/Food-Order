@@ -9,7 +9,7 @@ const MealItemForm = (props) => {
     event.preventDefault();
     // props.onAddMeal(props.meal);
     const enteredAmount = amountInputRef.current.value;
-    const enteredAmountNumber = +enteredAmount;
+    const enteredAmountNumber = +enteredAmount; //string number to a number change 
 
     if(enteredAmount.trim().length === 0 || enteredAmountNumber <1 || enteredAmountNumber > 5) {
       return;
