@@ -1,8 +1,3 @@
-// import {useContext} from 'react';
-
-// import classes from './Cart.module.css';
-// import Modal from '../UI/Model';
-// import cartContext from '../../store/cart-context';
 import { useContext } from 'react';
 
 import Modal from '../UI/Model';
