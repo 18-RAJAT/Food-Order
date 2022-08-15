@@ -1,7 +1,12 @@
-import classes from './Card.module.css';
+import classes from './Input.module.css';
 
-const Card=props=>{
-    return <div className={classes.card}>{props.children}</div>
+const Input = (props) => {
+  return (
+    <div className={classes.input}>
+      <label htmlFor={props.input.id}>{props.label}</label>
+      <input {...props.input} />
+    </div>
+  );
 };
 
-export default Card;
+export default Input;
